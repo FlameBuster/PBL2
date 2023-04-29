@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <title>SideBar</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="sidebar">
+        <header>
+            <div class="image-text">
+            <span class="image">
+            <img class="logo" src="logo.jpg.avif" alt="logo">
+            </span>
+            <div class="text header-text">
+                <span class="name">PBL</span>
+                <span class="description">Semantic Search</span>
+            </div>
+            </div>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg> -->
+        </header>
+
+        <div class="menu-bar">
+            <ul class="menu">
+              
+              <li class="search-button" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" style="fill: rgba(0, 0, 0, 1);"><path d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path></svg>
+                <input class="Search" type="search" placeholder="Search">
+              </li>
+            
+                <li class = "sidemenu-button">
+                  <a class="new" href="#">
+                    <span class="Sidebar-text">
+                 + New Book
+                    </span>
+                </li>
+              </a>
+                  <li class="Book1">
+                    <a href="#"><span class="Sidebar-text">&#8226;  Atomic Habits - James Clear </span></a>
+                  </li>
+                  <li class="Book1">
+                    <a href="#"><span class="Sidebar-text">&#8226;  Taming of the Shrew - William Shakespeare</span></a>
+                  </li>
+                  <li class="Book1">
+                    <a href="#"><span class="Sidebar-text">&#8226;  Meditations - Marcus Aurelius</span></a>
+                    
+                </li>
+                  <li class="Book1">
+                    <a href="#"><span class="Sidebar-text">&#8226;  Playing it My Way - Sachin Tendulkar</span></a>
+                  </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="chat-box">
+        <div class="chat-log">
+            <div class="chat-message">
+             <div class="chat-message-center">
+             <div class="avatar">
+                
+                </div>
+                <div class="message">
+                  Chat
+                </div>
+             </div>
+            </div>
+            <div class="chat-message chatbot">
+             <div class="chat-message-center">
+             <div class="avatar chatbot">
+                
+                </div>
+                <div class="message">
+                  AI
+                </div>
+             </div>
+            </div>
+          </div>
+          <div class="chat-input-holder">
+            <form onsubmit="{handleSubmit}">
+              <input rows="1" type="text" class="chat-text-area" value={input} onchange=UpdateInput>
+
+          </div>
+    
+    </div>
+    
+</body>
+</html>
